@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hakan Otal's Routes</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="icon.png" type="ico" sizes="256x256">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div id="spinner"></div>
+    <div id="map"></div>
+    <hr>
+    <div>
+        Total Rides: <a id="r">---</a> 
+        &nbsp;&nbsp;
+        Total Distance: <a id="d">---</a> km 
+        &nbsp;&nbsp; 
+        Total Elevation Gain: <a id="e">---</a> m 
+        <div id="check">
+            <input type="checkbox" id="markers" name="markers" onclick="checkBox()">
+            <label for="markers"> Show markers</label>
+        </div>
+        
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+    <script src="polyline.js"></script>
+    <script src="app.js"></script>  
+</body>
+</html>
